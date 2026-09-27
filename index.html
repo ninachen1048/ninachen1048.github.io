@@ -28,15 +28,15 @@
       font-size: 0.95rem;
     }
     .header-links a:hover { text-decoration: underline; }
-    .header-links a.github { color: #24292e; }
     section { background: #fff; padding: 1.75rem; border-radius: 10px; margin-bottom: 1.5rem; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
     section h2 { font-size: 1.3rem; margin-bottom: 1rem; color: #1f3a93; border-bottom: 2px solid #eaeef5; padding-bottom: 0.5rem; }
     ul.skills { list-style: none; display: flex; flex-wrap: wrap; gap: 0.5rem; }
     ul.skills li { background: #eaf1ff; color: #1f3a93; padding: 0.4rem 0.85rem; border-radius: 20px; font-size: 0.95rem; }
-    .project { margin-bottom: 1.25rem; }
+    .project { margin-bottom: 1.5rem; }
     .project:last-child { margin-bottom: 0; }
     .project h3 { font-size: 1.05rem; margin-bottom: 0.25rem; }
     .project p { color: #444; margin-bottom: 0.4rem; }
+    .project .meta { font-size: 0.85rem; color: #777; margin-bottom: 0.5rem; }
     .project a { color: #1f3a93; text-decoration: none; font-weight: 500; }
     .project a:hover { text-decoration: underline; }
     footer { text-align: center; color: #888; font-size: 0.9rem; margin-top: 2rem; }
@@ -74,15 +74,16 @@
     <section>
       <h2>Skills</h2>
       <ul class="skills">
+        <li>R / RStudio</li>
         <li>Microsoft Excel</li>
+        <li>Data Analysis</li>
+        <li>Hypothesis Testing</li>
+        <li>Data Visualization (ggplot2)</li>
         <li>Microsoft Word</li>
         <li>Microsoft PowerPoint</li>
         <li>Canva</li>
-        <li>MDland (EHR)</li>
-        <li>Data Analysis</li>
         <li>Financial Transactions</li>
         <li>Bookkeeping</li>
-        <li>Digital Art</li>
         <li>Mandarin Chinese (Native)</li>
         <li>English (Fluent)</li>
       </ul>
@@ -93,32 +94,39 @@
       <h2>Projects</h2>
 
       <div class="project">
-        <h3>Published Book — "Yours Truly, AAPI Youth: Embracing Asian Culture and Identity"</h3>
+        <h3>FIFA Rankings Analysis: UEFA vs. CONMEBOL (1993–2018)</h3>
+        <p class="meta">Data Analysis · R / RStudio · Team of 4</p>
         <p>
-          As Vice President of the Chinese Culture Club, conceived, edited, and published a
-          book featuring 31 QHSS students from the Asian American and Pacific Islander
-          community. The project involved coordinating contributors, editing submissions,
-          and managing the publication process end to end.
+          Analyzed 25 years of FIFA men's international rankings to test whether UEFA
+          (Europe) and CONMEBOL (South America) teams differ significantly in average
+          ranking points when controlling for matches played. Built a two-sample
+          z-test in R, produced distribution and sampling-distribution visualizations
+          with ggplot2, and found CONMEBOL teams average ~134 more ranking points than
+          UEFA teams (z = -16.65, p &lt; 0.001) — a statistically significant difference
+          rejecting the null hypothesis.
         </p>
+        <a href="[PDF link — upload slides to your repo and link here]" target="_blank" rel="noopener noreferrer">View Presentation →</a>
       </div>
 
       <div class="project">
-        <h3>Data-Driven Problem Solving — Coursework Portfolio</h3>
+        <h3>Published Book — "Yours Truly, AAPI Youth: Embracing Asian Culture and Identity"</h3>
+        <p class="meta">Chinese Culture Club · Vice President</p>
         <p>
-          Applied analytical methods across coursework in Data 101, Intro to Statistics for
-          Business, AP Calculus BC, and Intro to Microeconomics. Work includes spreadsheet
-          modeling in Excel, statistical analysis, and interpreting quantitative results to
-          support business decisions.
+          As Vice President of the Chinese Culture Club, conceived, edited, and published
+          a book featuring 31 QHSS students from the Asian American and Pacific Islander
+          community. Coordinated contributors, edited submissions, and managed the
+          publication process end to end.
         </p>
       </div>
 
       <div class="project">
         <h3>Medical Records &amp; Patient Data Management — YongKang and Evergreen Medical</h3>
+        <p class="meta">Volunteer Receptionist · 120+ hours</p>
         <p>
-          Maintained and updated patient records for 2,000+ individuals as a volunteer
-          receptionist, scheduled follow-up appointments, and provided Mandarin–English
-          interpretation. Developed hands-on experience with healthcare information systems
-          and confidential data handling.
+          Maintained and updated patient records for 2,000+ individuals, scheduled
+          follow-up appointments, and provided Mandarin–English interpretation. Gained
+          hands-on experience with healthcare information systems and confidential
+          data handling.
         </p>
       </div>
     </section>
